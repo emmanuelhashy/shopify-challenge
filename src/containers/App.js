@@ -36,7 +36,7 @@ function App() {
     let nominations = localStorage.getItem('nominations')?JSON.parse(localStorage.getItem('nominations')):[]
     setValues({ ...values, loading: true });
     fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=e79d35c7&s=${
+      `https://www.omdbapi.com/?i=tt3896198&apikey=e79d35c7&s=${
         movieTitle ? movieTitle : "superman"
       }`
     )
